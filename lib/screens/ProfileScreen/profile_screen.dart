@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../blocs/user_bloc/user_bloc.dart';
+import '../../widgets/text_icon_button_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -15,6 +16,7 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: BlocBuilder<UserBloc, UserInittedState>(builder: (context, state) {
         final _bloc = context.watch<UserBloc>();
+        _onLogOutPressed() => _bloc.add(DeleteUserEvent());
 
         return Center(
           child: Container(
@@ -25,19 +27,10 @@ class ProfileScreen extends StatelessWidget {
                 Container(
                     margin: const EdgeInsets.only(bottom: 44),
                     child: Text(state.username)),
-                ElevatedButton(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                      children: [
-                        Expanded(child: Text('Sign Out'.toUpperCase())),
-                        const Icon(Icons.logout)
-                      ],
-                    ),
-                  ),
-                  onPressed: () {
-                    _bloc.add(DeleteUserEvent());
-                  },
+                TextIconButtonWidget(
+                  onPressed: _onLogOutPressed,
+                  text: 'Sign Out',
+                  icon: Icons.logout,
                 ),
               ],
             ),
