@@ -1,0 +1,46 @@
+name: pexels_clone
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cached_network_image: ^3.3.0
+  google_nav_bar: ^5.0.6
+  shared_preferences: ^2.2.2
+  flutter_bloc: ^8.1.3
+  bloc_concurrency: ^0.2.2
+  stream_transform: ^2.1.0
+  dio: ^5.3.3
+  flutter_dotenv: ^5.1.0
+  shared_preferences_monitor: ^2.0.0+3
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+
+  fonts:
+    - family: DMSans
+      fonts:
+        - asset: fonts/DMSans.ttf
+        - asset: fonts/DMSans-Italic.ttf
+          style: italic
