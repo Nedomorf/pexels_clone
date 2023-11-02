@@ -2,9 +2,9 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../blocs/user_bloc/user_bloc.dart';
-import '../../models/photo_model.dart';
-import '../../utlis/constants.dart';
+import '../blocs/user_bloc/user_bloc.dart';
+import '../models/photo_model.dart';
+import '../utlis/constants.dart';
 
 class PhotoWidget extends StatelessWidget {
   final PhotoModel photo;

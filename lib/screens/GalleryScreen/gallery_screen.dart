@@ -3,10 +3,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pexels_clone/utlis/constants.dart';
 
 import '../../blocs/photo_bloc/photo_bloc.dart';
-import 'card_widget.dart';
+import '../../widgets/card_widget.dart';
 
-class GalleryWidget extends StatelessWidget {
-  const GalleryWidget({super.key});
+class GalleryScreen extends StatelessWidget {
+  const GalleryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

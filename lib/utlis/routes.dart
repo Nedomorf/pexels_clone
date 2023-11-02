@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/Favourite/favourite_widget.dart';
-import '../widgets/Gallery/gallery_widget.dart';
-import '../widgets/Profile/profile_widget.dart';
+import '../screens/FavouriteScreen/favourite_screen.dart';
+import '../screens/GalleryScreen/gallery_screen.dart';
+import '../screens/ProfileScreen/profile_screen.dart';
 
 List<Widget> routes = const <Widget>[
-  GalleryWidget(),
-  FavouriteWidget(),
-  ProfileWidget()
+  GalleryScreen(),
+  FavouriteScreen(),
+  ProfileScreen()
 ];

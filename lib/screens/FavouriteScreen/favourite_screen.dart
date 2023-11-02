@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pexels_clone/blocs/user_bloc/user_bloc.dart';
-import 'package:pexels_clone/widgets/Gallery/card_widget.dart';
+import 'package:pexels_clone/widgets/card_widget.dart';
 
-class FavouriteWidget extends StatelessWidget {
-  const FavouriteWidget({super.key});
+class FavouriteScreen extends StatelessWidget {
+  const FavouriteScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,10 @@ class FavouriteWidget extends StatelessWidget {
           mainAxisSpacing: 15,
           childAspectRatio: 0.75,
           padding: const EdgeInsets.symmetric(horizontal: 25),
-          children: [...state.photos.map((photo) => CardWidget(photo: photo, closeOnUnlike: true))],
+          children: [
+            ...state.photos
+                .map((photo) => CardWidget(photo: photo, closeOnUnlike: true))
+          ],
         );
       }),
     );

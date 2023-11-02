@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../models/photo_model.dart';
+import '../models/photo_model.dart';
 import 'photo_widget.dart';
 
 class CardWidget extends StatelessWidget {
