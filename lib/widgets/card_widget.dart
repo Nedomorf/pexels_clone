@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../models/photo_model.dart';
-import 'photo_widget.dart';
+import '../screens/photo_screen.dart';
 
 class CardWidget extends StatelessWidget {
   final PhotoModel photo;
@@ -20,7 +20,7 @@ class CardWidget extends StatelessWidget {
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
             builder: (context) =>
-                PhotoWidget(photo: photo, closeOnUnlike: closeOnUnlike)));
+                PhotoScreen(photo: photo, closeOnUnlike: closeOnUnlike)));
       },
       child: Stack(
         fit: StackFit.expand,
@@ -55,14 +55,12 @@ class CardWidget extends StatelessWidget {
               children: <Widget>[
                 Text(
                   alt,
-                  style: const TextStyle(color: Colors.white),
                   overflow: TextOverflow.ellipsis,
+                  style: Theme.of(context).textTheme.labelMedium,
                 ),
-                Text(
-                  'by: $photographer',
-                  style: const TextStyle(color: Colors.white),
-                  overflow: TextOverflow.ellipsis,
-                ),
+                Text('by: $photographer',
+                    overflow: TextOverflow.ellipsis,
+                    style: Theme.of(context).textTheme.labelSmall),
               ],
             ),
           )

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../screens/FavouriteScreen/favourite_screen.dart';
-import '../screens/GalleryScreen/gallery_screen.dart';
-import '../screens/ProfileScreen/profile_screen.dart';
+import '../screens/favourite_screen.dart';
+import '../screens/gallery_screen.dart';
+import '../screens/profile_screen.dart';
 
 List<Widget> routes = const <Widget>[
   GalleryScreen(),
