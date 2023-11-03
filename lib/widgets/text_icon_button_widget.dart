@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pexels_clone/utlis/constants.dart';
+
+import '../utlis/constants.dart';
 
 class TextIconButtonWidget extends StatelessWidget {
   final void Function() onPressed;

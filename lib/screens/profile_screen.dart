@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/ProfileWidgets/profile_body_widget.dart';
 import 'screen_wrapper.dart';
+import '../widgets/ProfileWidgets/profile_body_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

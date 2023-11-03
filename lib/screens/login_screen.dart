@@ -43,7 +43,10 @@ class _LogInScreenState extends State<LogInScreen> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text('Let’s Sign You In'),
+                    Text(
+                      'Let’s Sign You In',
+                      style: Theme.of(context).textTheme.labelLarge,
+                    ),
                     TextFormField(
                       decoration: const InputDecoration(labelText: 'User Name'),
                       initialValue: state.username,

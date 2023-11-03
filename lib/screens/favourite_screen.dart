@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/FavouriteWidgets/favourite_body_widget.dart';
 import 'screen_wrapper.dart';
+import '../widgets/FavouriteWidgets/favourite_body_widget.dart';
 
 class FavouriteScreen extends StatelessWidget {
   const FavouriteScreen({super.key});
